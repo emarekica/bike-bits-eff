@@ -10,11 +10,13 @@
 - CSS3 / SCSS
 - JavaScript
 
+<br><br>
+
 ## Mockup
 
 <br>
 
-[See the mockups on Behance](https://www.behance.net/gallery/130790147/CYCLING-BLOG)
+[Mockups on Behance](https://www.behance.net/gallery/130790147/CYCLING-BLOG)
 
 <br><hr /><br>
 
@@ -22,7 +24,7 @@
 
 <br>
 
-- ## Improvement ideas
+## Improvement ideas
 
 <br>
 
@@ -35,9 +37,22 @@
     - styles
     - pages
 
-- remove IDs where unnecessary
+[x] remove IDs where unnecessary
 
-- fix form bug
+[x] fix form bug
 
-- document
+[x] document
 
+[-] go through unknown elements > document
+
+<br><br>
+
+## Next
+
+<br>
+
+[-] Fix distance beween lines of `h1`
+
+[-] Go through IDs in `blog.html`
+
+[-] Make slider gallery go to the default state when background clicked
