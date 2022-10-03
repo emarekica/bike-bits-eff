@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="favicon" href="/assets/icons/favicon.ico" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    
+    <link rel="stylesheet" href="/styles/home.css" />
+
+    <title>Bike Bits</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header home">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/assets/icons/logo.png" alt="emarekica logo" id="logo" />
+        </a>
+
+        <p class="logo-txt">BIKE-BITS</p>
+      </div>
+
+      <aside>
+        <nav class="navigation__up">
+          <a href="/index.html" id="home">Home</a>
+
+          <!-- make modal -->
+          <a href="#" id="about" target="_blank">About</a>
+
+          <a href="/blog/blog.html" id="blog" target="_blank">Blog</a>
+          <a href="/gallery/gallery.html" id="about" target="_blank"
+            >Gallery</a
+          >
+
+          <!-- opens modal -->
+
+          <a href="#" class="contact" id="contact">Contact</a>
+        </nav>
+
+        <form class="form__search" target="_self">
+          <input type="search" name="search" />
+          <button type="submit">Search</button>
+        </form>
+      </aside>
+    </header>
+
+    <section class="header-img home">
+      <img
+        src="/assets/homepage/homepage_muted.jpg"
+        alt="Man cycling in forest cover image"
+        class="cover-img"
+      />
+      <h1>Discover cycling</h1>
+      <div class="box-right"></div>
+      <div class="box-left"></div>
+    </section>
+
+    <main class="home">
+      <!-- Blog thumbnails -->
+      <article class="blog-thumbnails">
+        <h2 class="blogposts">Latest blog posts</h2>
+
+        <div class="line-1"></div>
+
+        <div class="thumbnail-container">
+          <!-- dynamically fill later, id changes -->
+          <div class="thumbnail img-1" id="blog-1">
+            <a href="blog/blog.html" target="_blank">
+              <img
+                id="vrana"
+                src="/assets/homepage/sm-header_vrana_sm.jpg"
+                alt="Vrana lake thumbnail"
+              />
+              <p>VRANA LAKE</p>
+            </a>
+            <p class="thumbnail-txt">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div class="thumbnail img-2" id="blog-2">
+            <a href="/src/blog/blog.html" target="_blank">
+              <img
+                id="dabrovi"
+                src="/assets/homepage/sm-header_dabrovi_sm.jpg"
+                alt="Dabrovi thumbnail"
+              />
+              <p>DABARSKI KUKOVI</p>
+            </a>
+            <p class="thumbnail-txt">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="thumbnail img-3" id="blog-3">
+            <a href="/src/blog/blog.html" target="_blank">
+              <img
+                id="gorice"
+                src="/assets/homepage/sm-header_sumarica_sm.jpg"
+                alt="Vukomericke gorice thumbnail"
+              />
+              <p>ŠUMARICA</p>
+            </a>
+            <p class="thumbnail-txt">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni.
+            </p>
+          </div>
+          <div class="thumbnail img-4" id="blog-4">
+            <a href="/blog/blog.html" target="_blank">
+              <img
+                id="pokupsko"
+                src="/assets/homepage/sm-header_pokupsko_sm.jpg"
+                alt="Pokupsko thumbnail"
+              />
+              <p>POKUPSKO</p>
+            </a>
+            <p class="thumbnail-txt">
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur.
+            </p>
+          </div>
+        </div>
+      </article>s
+
+      <!-- About -->
+      <article class="about">
+        <!-- <img
+          id="about-photo"
+          src="./assets/photos/homepage/about-photo.jpg"
+          alt="Girl with bicycle on the hiking trail"
+        /> -->
+        <div class="parallax-container">
+          <img
+            id="sky"
+            src="/assets/homepage/parallax3-full.png"
+            alt="Sky background"
+          />
+          <img
+            id="hill"
+            src="/assets/homepage/parallax2.png"
+            alt="Hill background"
+          />
+          <img
+            id="girl"
+            src="/assets/homepage/parallax1.png"
+            alt="Girl on a bike foreground"
+          />
+        </div>
+
+        <div class="about-txt">
+          <h2 class="about-header">About</h2>
+
+          <div class="line-2"></div>
+
+          <p class="about-me">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+            est et expedita distinctio.
+          </p>
+        </div>
+      </article>
+
+      <div class="line-3"></div>
+
+      <!-- Gallery -->
+
+      <h2 class="gallery-header">
+        <a href="/gallery/gallery.html" target="_blank">Gallery</a>
+      </h2>
+
+      <!-- Slider -->
+
+      <div class="slide-container">
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+        <span class="slider-span" id="slider-span5"></span>
+
+        <div class="image-slider">
+          <div class="slides-div" id="slide-1">
+            <img
+              src="/assets/homepage/gallery1_sm.jpg"
+              alt=""
+              class="img"
+              id="img1"
+            />
+
+            <a href="#slider-span1" class="button" id="button-1"></a>
+          </div>
+
+          <div class="slides-div" id="slide-2">
+            <img
+              src="/assets/homepage/gallery2_sm.jpg"
+              alt=""
+              class="img"
+              id="img2"
+            />
+
+            <a href="#slider-span2" class="button" id="button-2"></a>
+          </div>
+
+          <div class="slides-div" id="slide-3">
+            <img
+              src="/assets/homepage/gallery3_sm.jpg"
+              alt=""
+              class="img"
+              id="img3"
+            />
+
+            <a href="#slider-span3" class="button" id="button-3"></a>
+          </div>
+
+          <div class="slides-div" id="slide-4">
+            <img
+              src="/assets/homepage/gallery4_sm.jpg"
+              alt=""
+              class="img"
+              id="img4"
+            />
+
+            <a href="#slider-span4" class="button" id="button-4"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer home">
+      <nav class="navigation__bottom">
+        <li><a href="#" id="home2" target="_blank">Home</a></li>
+
+        <li>
+          <a href="/src/about/about.html" id="about2" target="_blank">About</a>
+        </li>
+
+        <li>
+          <a href="/src/blog/blog.html" id="blog2" target="_blank">Blog</a>
+        </li>
+
+        <li class="contact" id="contact2">Contact</li>
+      </nav>
+
+      <div class="soc-media">
+        <p class="logo-txt-2">Bike-bits</p>
+        <a
+          href="https://www.facebook.com/e.marekica"
+          target="_blank"
+          class="facebook"
+        >
+          <img
+            src="/assets/icons/facebook.png"
+            alt="Facebook icon"
+            id="fb-img"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/e.marekica.makes"
+          target="_blank"
+          class="instagram"
+        >
+          <img
+            src="/assets/icons/instagram.png"
+            alt="Instagram icon"
+            id="insta-img"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <!-- MODAL - contact -->
+
+    <!-- optionally wrap the modal in another div, ARTICLE (preferably) or section (in this case, remove heading)-->
+
+    <!-- <div class="backdrop"></div> -->
+    <div class="modal-container">
+      <div class="exit">x</div>
+
+      <header>
+        <h2 class="contact-header">Contact</h2>
+      </header>
+
+      <form>
+        <div class="inputs">
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              size="30"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            columns="10"
+            placeholder="enter your message here"
+          ></textarea>
+        </div>
+
+        <div class="buttons">
+          <button class="submit">Send message</button>
+          <button class="reset" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <footer class="modal-footer">
+        <ul class="soc-media">
+          <li>
+            <a href="/index.html" target="_blank" class="homepage"
+              ><img
+                src="/assets/icons/logo.png"
+                alt="Logo icon"
+                id="modal-logo"
+            /></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.facebook.com/e.marekica"
+              target="_blank"
+              class="facebook"
+            >
+              <img
+                src="/assets/icons/facebook.png"
+                alt="Facebook icon"
+                id="modal-fb-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/e.marekica.makes"
+              target="_blank"
+              class="instagram"
+            >
+              <img
+                src="/assets/icons/instagram.png"
+                alt="Instagram icon"
+                id="modal-insta-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- scripts -->
+
+    <!-- ANIMATION -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+    <!-- combines animation & scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
+    <!-- MODAL -->
+    <!-- <script src="/src/contact/contact.js"></script> -->
+
+    <!-- MAIN SCRIPT -->
+    <script src="/src/home/home.js"></script>
+  </body>
+</html>

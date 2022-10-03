@@ -1,0 +1,55 @@
+/* general rules */
+
+
+/* ------- general ------- */
+
+@font-face {
+    font-family: "Ailerons";
+    src: url(/assets/font/Ailerons/Ailerons.ttf) format("truetype");
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url("../../assets/backgrounds/isopleths.png");
+
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.5em;
+
+    margin: 2em 2em 1em 2em;
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+    flex-flow: column;
+
+    margin: 4em 2em 4em 5em;
+}
+
+a {
+    margin: 0 1.2em;
+    text-decoration: none;
+    color: #595858;
+}
+
+a:hover {
+    font-weight: bolder;
+}

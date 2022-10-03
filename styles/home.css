@@ -1,0 +1,749 @@
+/* ------- header / nav / search ------- */
+
+
+
+/* BUG: Interferes with form from CONTACT MODAL >> rename */
+.form__search {
+  margin: 0.5em 0.5em 1.5em 0.5em;
+  display: flex;
+
+  border-radius: 5px;
+  padding: 2px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+li {
+  /* hides bullets */
+  list-style: none;
+}
+
+input[type="search"] {
+  border: none;
+  background: white;
+  margin: 0;
+  padding: 5px 5px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  /* these two hide the button text */
+  text-indent: -999px;
+  overflow: hidden;
+
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #868686;
+  outline: none;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* --- h1 animation --- */
+
+h1 {
+  position: absolute;
+
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -78%);
+
+  font-family: Ailerons;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.cover-img {
+  /* covers the whole page */
+  width: 150vw;
+  height: 100vh;
+
+  overflow: visible;
+  margin: unset;
+  object-fit: cover;
+}
+
+.box-right {
+  position: absolute;
+  top: 52.5%;
+  left: 30%;
+
+  display: inline-block;
+  background-color: #cacaca35;
+  height: 8em;
+  width: 80vw;
+
+  border-radius: 5px;
+}
+
+.box-left {
+  position: absolute;
+  top: 70%;
+  right: 30%;
+
+  display: inline-block;
+  background-color: #cacaca35;
+  height: 8em;
+  width: 80vw;
+
+  border-radius: 5px;
+}
+
+/* ------- IMG ------- */
+
+img {
+  display: flex;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+#logo {
+  float: left;
+  width: 7em;
+  margin-bottom: 1em;
+  opacity: 1;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 4em 4em 4em;
+}
+
+.img-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  margin: 0 2em 0 4em;
+}
+
+#fb-img,
+#insta-img {
+  max-width: 1.7em;
+  margin: auto 0.5em;
+}
+
+#vrana,
+#dabrovi,
+#gorice,
+#pokupsko {
+  border-radius: 10px;
+  width: 30em;
+  max-height: 18em;
+}
+
+/* ------- TXT ------- */
+
+.logo-txt {
+  float: left;
+
+  color: #595858;
+  font-family: "Ailerons";
+  font-size: 1.5em;
+  font-weight: 50;
+}
+
+.img-description {
+  margin-top: 2em;
+  font-weight: 100;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  font-family: Alegreya Sans SC, sans-serif;
+  color: #737373;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.blogposts {
+  margin-top: 4em;
+}
+
+.thumbnail {
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail-txt {
+  padding: 2em 3em 3em 3em;
+  font-size: 1.2em;
+  color: #737373;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.gallery-header {
+  margin: 2em 0 0.5em 0;
+  text-transform: capitalize;
+}
+
+.navigation__bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2.5em 0;
+  font-size: 1em;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+
+/* ------- grid ------- */
+
+.thumbnail-container {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: auto;
+
+  margin: 7em 10em;
+}
+
+#blog-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  background-color: #edecec;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+
+  margin-bottom: 4em;
+}
+
+#blog-2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: #edecec;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 4em;
+}
+
+#blog-3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #edecec;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 4em;
+}
+
+#blog-4 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #edecec;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 4em;
+}
+
+/* ------- footer ------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0 4em 0;
+}
+
+#home2,
+#about2,
+#blog2,
+#contact2 {
+  margin: 0 2em;
+}
+
+#contact2 {
+  color: #595858;
+}
+
+li#contact2:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.soc-media {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-self: center;
+  justify-items: left;
+  text-align: end;
+}
+
+.facebook,
+.instagram {
+  margin: 0 0.5em 1em 0.5em;
+}
+
+.logo-txt-2 {
+  font-family: "Ailerons";
+  font-weight: 50;
+  font-size: 2em;
+  color: #7f7f7f;
+}
+
+/* ------- lines ------- */
+
+.line-1 {
+  border-bottom: 1px solid #7373736e;
+  margin: 2.5em 32em;
+}
+
+.line-2 {
+  border-bottom: 1px solid #7373736e;
+  grid-column: 3;
+  grid-row: 1 / 2;
+
+  margin: 0 14em 3em 14em;
+}
+
+.line-3 {
+  border-bottom: 1px solid #7373736e;
+  margin: 8em 20em 0 20em;
+  padding: 5em 5em;
+}
+
+/* ------- blog thumbnails ------- */
+
+.thumbnail>a {
+  margin: 0;
+}
+
+a>img {
+  opacity: 0.4;
+}
+
+a>p {
+  text-align: center;
+  transform: translateY(-4em);
+  font-size: 2em;
+  font-weight: 400;
+  color: #5c5c5c;
+  letter-spacing: 0.05em;
+}
+
+.thumbnail:hover {
+  transform: translateY(-2em);
+  transition: 0.7s;
+}
+
+.thumbnail {
+  transform: translateY(0);
+  transition: 0.7s;
+}
+
+a:hover>img {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+a:hover>p {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+/* ------- Parallax "About me" ------- */
+
+.about {
+  /* display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: auto; */
+  /* 
+  display: flex;
+  flex-direction: column; */
+
+  position: relative;
+  min-height: 80vh;
+}
+
+.parallax-container {
+  z-index: -1;
+}
+
+.parallax-container img {
+  position: absolute;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  height: 100vh;
+  width: 45%;
+  object-fit: cover;
+
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-txt {
+  position: absolute;
+  left: 45%;
+  height: 100vh;
+  background-color: #afafaf4c;
+}
+
+/* #about-photo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  max-width: 85%;
+} */
+
+.about-header {
+  /* grid-column: 3;
+  grid-row: 1 / 2; */
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin: 2em 2em 0.6em;
+}
+
+.about-me {
+  /* grid-column: 3;
+  grid-row: 2 / 3; */
+  font-size: 1.5em;
+  margin: 1em 5em 5em 5em;
+  color: #737373;
+  font-weight: 300;
+  line-height: 1.5em;
+  word-break: break-all;
+}
+
+/* 
+this combination allows to click on things and animate opacity 0 <-> 1
+
+opacity: 0;
+pointer-events: none; */
+
+/* ------- slider ------- */
+
+.slide-container {
+  display: flex;
+
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-slider {
+  display: flex;
+
+  width: 100%;
+  height: 30em;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.7s;
+}
+
+.slides-div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 30px;
+}
+
+.img {
+  position: relative;
+
+  height: 100%;
+  width: 20em;
+
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  border-radius: 10px;
+}
+
+.button {
+  position: absolute;
+
+  width: 20em;
+  height: 20em;
+
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+#slider-span1:target~.image-slider #img1,
+#slider-span1:target~.image-slider #button-1,
+#slider-span2:target~.image-slider #img2,
+#slider-span2:target~.image-slider #button-2,
+#slider-span3:target~.image-slider #img3,
+#slider-span3:target~.image-slider #button-3,
+#slider-span4:target~.image-slider #img4,
+#slider-span4:target~.image-slider #button-4 {
+  width: 40em;
+  height: auto;
+  margin: 0 0.7em;
+
+  background-color: transparent;
+}
+
+#slider-span1:target~.image-slider,
+#slider-span2:target~.image-slider,
+#slider-span3:target~.image-slider,
+#slider-span4:target~.image-slider {
+  left: 0%;
+}
+
+/* ------- contact modal ------- */
+
+/* can be implemented as SCSS mixin directly from Contact folder */
+
+/* THOUGHT: add this to body through JS
+
+body {
+  background: url("../../assets/backgrounds/isopleths.png");
+  display: flex;
+  justify-content: center;
+} */
+
+
+
+.modal-container {
+  background: url("../../assets/backgrounds/isopleths.png");
+
+  background-color: #cccaca47;
+  margin: 4em;
+  padding: 1.5em 2em 2.5em 2em;
+  width: 40vw;
+  border-radius: 3px;
+
+  /*  this combo allows to click and animate opacity */
+  opacity: 0;
+  pointer-events: none;
+
+  position: absolute;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+
+/* when background clicked */
+.modal-container.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* hides (and REMOVES) the rest of the page content from the layout*/
+.home.close {
+  display: none;
+}
+
+.exit,
+.contact-header,
+.name,
+.email,
+.message,
+.submit,
+.reset {
+  font-family: Alegreya Sans SC, sans-serif;
+  color: #737373;
+}
+
+.exit {
+  text-align: right;
+}
+
+.contact-header {
+  position: relative;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  border-bottom: 0.4px solid #737373;
+  max-width: fit-content;
+  line-height: 1.8em;
+  margin-bottom: 3em;
+}
+
+label {
+  margin-bottom: 0.7em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 300;
+  letter-spacing: 0.09em;
+}
+
+#name {
+  width: 14em;
+  padding: 0.3em;
+  background-color: transparent;
+  margin-right: 2em;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+}
+
+#name:focus {
+  outline: 1px solid #737373;
+  color: #737373;
+  letter-spacing: 0.09em;
+  background: transparent;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.09em;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#email {
+  width: 14em;
+  padding: 0.3em;
+  background-color: transparent;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+}
+
+#email:focus {
+  outline: 1px solid #737373;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+  letter-spacing: 0.09em;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  letter-spacing: 0.09em;
+  font-weight: 300;
+}
+
+textarea {
+  width: 16em;
+  padding: 0.3em;
+  background-color: transparent;
+  font-family: Alegreya Sans, sans-serif;
+  color: #a4a4a4;
+  letter-spacing: 0.09em;
+
+  padding: 1em 1.5em;
+  width: auto;
+  font-size: 0.8em;
+}
+
+textarea:focus {
+  outline: 1px solid #737373;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+  letter-spacing: 0.09em;
+}
+
+#email,
+#name,
+textarea {
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.buttons {
+  margin-bottom: 3em;
+}
+
+.submit {
+  margin-right: 1em;
+  padding: 0.4em 4em;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+  font-weight: 300;
+  background-color: #fffcfc;
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.submit:hover {
+  color: #ededed;
+  background: #5c7548;
+  font-weight: 500;
+}
+
+.reset {
+  padding: 0.4em 2em;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+  color: #ededed;
+  font-weight: 300;
+  background: #969696;
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.reset:hover {
+  color: #ededed;
+  /* color: #737373; */
+  background-color: #db5453;
+  font-weight: 500;
+}
+
+/* ------- footer ------- */
+
+#modal-logo {
+  width: 2.5em;
+}
+
+#modal-fb-img,
+#modal-insta-img {
+  width: 1em;
+}
+
+/* configure the modal out of Picasso style  */
