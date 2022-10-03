@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/main.css" />
-    
-    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/contact-modal.css" />
+  
 
     <title>Bike Bits</title>
   </head>
@@ -33,32 +33,32 @@
   <body>
     <!-- Header -->
     <header class="header home">
-      <div class="logo">
+      <div class="header__logo--container">
         <a href="index.html">
-          <img src="/assets/icons/logo.png" alt="emarekica logo" id="logo" />
+          <img src="/assets/icons/logo.png" alt="emarekica logo" class="header__logo--img" />
         </a>
 
-        <p class="logo-txt">BIKE-BITS</p>
+        <p class="header__logo--txt">BIKE-BITS</p>
       </div>
 
       <aside>
-        <nav class="navigation__up">
-          <a href="/index.html" id="home">Home</a>
+        <nav class="header__navigation--up">
+          <a href="/index.html">Home</a>
 
-          <!-- make modal -->
-          <a href="#" id="about" target="_blank">About</a>
+          <!-- modal -->
+          <a href="#" target="_blank">About</a>
 
-          <a href="/blog/blog.html" id="blog" target="_blank">Blog</a>
-          <a href="/gallery/gallery.html" id="about" target="_blank"
+          <a href="/blog/blog.html" target="_blank">Blog</a>
+          <a href="/gallery/gallery.html" target="_blank"
             >Gallery</a
           >
 
-          <!-- opens modal -->
-
-          <a href="#" class="contact" id="contact">Contact</a>
+          <!-- modal -->
+          <a href="#" class="contact">Contact</a>
         </nav>
 
-        <form class="form__search" target="_self">
+        <!-- search bar -->
+        <form class="header__form--searchbar" target="_self">
           <input type="search" name="search" />
           <button type="submit">Search</button>
         </form>
@@ -79,11 +79,11 @@
     <main class="home">
       <!-- Blog thumbnails -->
       <article class="blog-thumbnails">
-        <h2 class="blogposts">Latest blog posts</h2>
+        <h2 class="blogposts__header">Latest blog posts</h2>
 
         <div class="line-1"></div>
 
-        <div class="thumbnail-container">
+        <div class="thumbnail__container">
           <!-- dynamically fill later, id changes -->
           <div class="thumbnail img-1" id="blog-1">
             <a href="blog/blog.html" target="_blank">
@@ -94,7 +94,7 @@
               />
               <p>VRANA LAKE</p>
             </a>
-            <p class="thumbnail-txt">
+            <p class="thumbnail__txt">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur.
             </p>
@@ -108,7 +108,7 @@
               />
               <p>DABARSKI KUKOVI</p>
             </a>
-            <p class="thumbnail-txt">
+            <p class="thumbnail__txt">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
@@ -122,7 +122,7 @@
               />
               <p>ŠUMARICA</p>
             </a>
-            <p class="thumbnail-txt">
+            <p class="thumbnail__txt">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni.
             </p>
@@ -136,7 +136,7 @@
               />
               <p>POKUPSKO</p>
             </a>
-            <p class="thumbnail-txt">
+            <p class="thumbnail__txt">
               Quis autem vel eum iure reprehenderit qui in ea voluptate velit
               esse quam nihil molestiae consequatur.
             </p>
@@ -189,7 +189,7 @@
 
       <!-- Gallery -->
 
-      <h2 class="gallery-header">
+      <h2 class="gallery__header">
         <a href="/gallery/gallery.html" target="_blank">Gallery</a>
       </h2>
 
@@ -250,23 +250,23 @@
       </div>
     </main>
 
-    <footer class="footer home">
+    <footer class="footer__main home">
       <nav class="navigation__bottom">
         <li><a href="#" id="home2" target="_blank">Home</a></li>
 
         <li>
-          <a href="/src/about/about.html" id="about2" target="_blank">About</a>
+          <a href="/about/about.html" id="about2" target="_blank">About</a>
         </li>
 
         <li>
-          <a href="/src/blog/blog.html" id="blog2" target="_blank">Blog</a>
+          <a href="/blog/blog.html" id="blog2" target="_blank">Blog</a>
         </li>
 
         <li class="contact" id="contact2">Contact</li>
       </nav>
 
       <div class="soc-media">
-        <p class="logo-txt-2">Bike-bits</p>
+        <p class="header__logo--txt">Bike-bits</p>
         <a
           href="https://www.facebook.com/e.marekica"
           target="_blank"
@@ -340,7 +340,7 @@
         </div>
       </form>
 
-      <footer class="modal-footer">
+      <footer class="footer__modal">
         <ul class="soc-media">
           <li>
             <a href="/index.html" target="_blank" class="homepage"
@@ -401,6 +401,6 @@
     <!-- <script src="/src/contact/contact.js"></script> -->
 
     <!-- MAIN SCRIPT -->
-    <script src="/src/home/home.js"></script>
+    <script src="/scripts/home.js"></script>
   </body>
 </html>
