@@ -35,15 +35,6 @@ aside {
     margin: 2em 2em 1em 2em;
 }
 
-.logo {
-    display: flex;
-
-    align-items: center;
-    flex-flow: column;
-
-    margin: 4em 2em 4em 5em;
-}
-
 a {
     margin: 0 1.2em;
     text-decoration: none;
@@ -52,4 +43,75 @@ a {
 
 a:hover {
     font-weight: bolder;
+}
+
+li {
+    /* hides bullets */
+    list-style: none;
+}
+
+h1 {
+    position: absolute;
+
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -78%);
+
+    font-family: Ailerons;
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-family: Alegreya Sans SC, sans-serif;
+    color: #737373;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* IMGs */
+
+img {
+    display: flex;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.soc-media {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-self: center;
+    justify-items: left;
+    text-align: end;
+}
+
+.facebook,
+.instagram {
+    margin: 0 0.5em 1em 0.5em;
+}
+
+/* ------- lines ------- */
+
+.line-1 {
+    border-bottom: 1px solid #7373736e;
+    margin: 2.5em 32em;
+}
+
+.line-2 {
+    border-bottom: 1px solid #7373736e;
+    grid-column: 3;
+    grid-row: 1 / 2;
+
+    margin: 0 14em 3em 14em;
+}
+
+.line-3 {
+    border-bottom: 1px solid #7373736e;
+    margin: 8em 20em 0 20em;
+    padding: 5em 5em;
 }
