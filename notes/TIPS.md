@@ -165,6 +165,42 @@ CSS:
 
 <br><br>
 
+### TOGGLE SIZE OF AN ELEMENT WITH :focus
+
+<br>
+
+When you click on the test, it grows and has red background.
+When you click anywhere else, it closes back. **Browser handles returning to the state before :focus**.
+
+<br><br>
+
+HTML:
+<br>
+
+    <a href="#">Test</a>
+    <a href="#">Test</a>
+    <a href="#">Test</a>
+    <a href="#">Test</a>
+<br>
+
+CSS:
+<br>
+
+a {
+    display: block;
+    width: 1em;
+}
+
+a:focus {
+    background: red;
+    color: white;
+    width: 3em;
+}
+
+<br><br>
+
+
+
 
 <br><br>
 
