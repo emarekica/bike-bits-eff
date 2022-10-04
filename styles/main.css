@@ -410,17 +410,6 @@ li#contact2:hover {
 
 /* --- Gallery slider --- */
 
-.gallery__exit {
-  display: inline-block;
-
-  position: relative;
-  left: 90vw;
-
-  font-size: 2em;
-  font-family: Alegreya Sans SC;
-
-  z-index: 10;
-}
 
 .slide-container {
   display: flex;
@@ -488,7 +477,7 @@ li#contact2:hover {
 #slider-span3:target~.image-slider #button-3,
 #slider-span4:target~.image-slider #img4,
 #slider-span4:target~.image-slider #button-4 {
-  width: 40em;
+  width: 25em;
   height: auto;
   margin: 0 0.7em;
 
@@ -500,4 +489,41 @@ li#contact2:hover {
 #slider-span3:target~.image-slider,
 #slider-span4:target~.image-slider {
   left: 0%;
+}
+
+/* closing "x" */
+
+.gallery__exit {
+  display: inline-block;
+
+  position: relative;
+  left: 90vw;
+
+  font-size: 2em;
+  font-family: Alegreya Sans SC;
+
+  z-index: 10;
+}
+
+
+/* closing click on img */
+
+.gallery__exit--thumb {
+  display: none;
+}
+
+#slider-span1:target~.image-slider .gallery__exit--thumb,
+#slider-span2:target~.image-slider .gallery__exit--thumb,
+#slider-span3:target~.image-slider .gallery__exit--thumb,
+#slider-span4:target~.image-slider .gallery__exit--thumb {
+
+  display: block;
+
+  /* background-color: rgba(255, 0, 0, 0.563); */
+  position: absolute;
+
+  height: 25em;
+  width: 25em;
+
+  transition: 0.5s;
 }
