@@ -362,6 +362,8 @@ a:hover>p {
   text-transform: capitalize;
 }
 
+
+
 /* --- footer-nav --- */
 
 #fb-img,
@@ -407,6 +409,18 @@ li#contact2:hover {
 }
 
 /* --- Gallery slider --- */
+
+.gallery__exit {
+  display: inline-block;
+
+  position: relative;
+  left: 90vw;
+
+  font-size: 2em;
+  font-family: Alegreya Sans SC;
+
+  z-index: 10;
+}
 
 .slide-container {
   display: flex;
