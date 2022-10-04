@@ -19,6 +19,7 @@ body {
 
 header {
   display: flex;
+
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +27,7 @@ header {
 
 aside {
   display: flex;
+
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: center;
@@ -68,23 +70,24 @@ a:hover {
 
 /* interferes with modal form; use specific selectors (class) */
 form {
-  margin: 0.5em 0.5em 1.5em 0.5em;
   display: flex;
 
-  border-radius: 5px;
+  margin: 0.5em 0.5em 1.5em 0.5em;
   padding: 2px;
 
+  border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 input[type="search"] {
-  border: none;
-  background: white;
   margin: 0;
   padding: 5px 5px;
+
   font-size: 14px;
   color: inherit;
+
+  background: white;
   border: 1px solid transparent;
   border-radius: inherit;
 }
@@ -98,14 +101,16 @@ button[type="submit"] {
   text-indent: -999px;
   overflow: hidden;
 
-  width: 40px;
   padding: 0;
   margin: 0;
+  width: 40px;
+
   border: 1px solid transparent;
   border-radius: inherit;
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-  cursor: pointer;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
@@ -116,9 +121,10 @@ button[type="submit"]:focus,
 input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #868686;
   outline: none;
+
   color: #595858;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 /* ------- main ------- */
@@ -148,8 +154,8 @@ img {
 .cover-image {
   /* covers the whole page */
   width: 150vw;
-  overflow: visible;
   margin: unset;
+  overflow: visible;
 }
 
 #img-1,
@@ -178,12 +184,12 @@ img {
 #title {
   grid-column: 7 / 11;
 
-  text-align: center;
-  padding-left: 3em;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding-left: 3em;
+  text-align: center;
 
   font-size: 2.2em;
 }
@@ -192,11 +198,12 @@ img {
   grid-column: 1 / 5;
   grid-row: 2 / 3;
 
-  font-size: 1.5em;
   padding: 0 2em 0 0;
-  word-break: break-all;
-  line-height: 1.7em;
+
+  font-size: 1.5em;
   font-weight: 100;
+  line-height: 1.7em;
+  word-break: break-all;
 }
 
 #img-2 {
@@ -210,17 +217,16 @@ img {
   grid-column: 4 / 8;
   grid-row: 3 / 4;
 
-  margin: 1em 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em 0;
 
+  color: #595858;
   font-family: "Ailerons";
+  font-size: 2.5em;
   font-weight: 50;
   margin-bottom: 2.5em;
-  font-size: 2.5em;
-  color: #595858;
 }
 
 .img-3__container {
@@ -233,10 +239,10 @@ img {
   grid-row: 4 / 5;
 
   font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.7em;
   padding: 0 0 0 2em;
   word-break: break-all;
-  line-height: 1.7em;
-  font-weight: 100;
 }
 
 #img-4 {
@@ -269,13 +275,13 @@ article>p {
 #gpx {
   grid-column: 5 / 7;
   grid-row: 1 / 2;
-  text-align: center;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   font-size: 2em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -288,16 +294,16 @@ article>p {
 
 .gallery-header {
   display: flex;
-  margin: 2em 0 0.2em 0;
+
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2em;
+  margin: 2em 0 0.2em 2;
 
-  font-family: Alegreya Sans SC;
-  text-transform: capitalize;
-  font-size: 3em;
   color: #595858;
+  font-family: Alegreya Sans SC;
+  font-size: 3em;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 a:hover {
@@ -306,6 +312,7 @@ a:hover {
 
 .img-gallery {
   display: flex;
+
   flex-direction: row;
   justify-content: center;
   gap: 2em;
@@ -323,9 +330,9 @@ a:hover {
 }
 
 h1 {
+  color: #595858;
   font-family: "Ailerons";
   font-weight: 100;
-  color: #595858;
 }
 
 p {
@@ -336,31 +343,34 @@ article>p {
   font-size: 1.5em;
 
   /* aligns words from side to side */
-  word-break: break-all;
-  line-height: 1.7em;
   font-weight: 100;
+  line-height: 1.7em;
+  word-break: break-all;
 }
 
 .img-description {
   margin-top: 2em;
-  font-weight: 100;
+
   color: #595858;
-  text-transform: uppercase;
+  font-weight: 100;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .img-description-2 {
   margin: 2em 0 0 6em;
-  font-weight: 100;
+
   color: #595858;
-  text-transform: uppercase;
+  font-weight: 100;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* ------- footer ------- */
 
 footer {
   display: flex;
+
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
@@ -375,21 +385,25 @@ footer {
 
 .logo-txt-2 {
   margin: 0 0.5em 0 2em;
-  font-family: "Ailerons";
-  font-weight: 50;
-  font-size: 2em;
+
   color: #7f7f7f;
+  font-family: "Ailerons";
+  font-size: 2em;
+  font-weight: 50;
 }
 
 /* ------- slider small ------- */
 
 .gallery__exit {
-  position: relative;
-  z-index: 10;
   display: inline-block;
+
+  position: relative;
   left: 90vw;
+
   font-size: 2em;
   font-family: Alegreya Sans SC;
+
+  z-index: 10;
 }
 
 
@@ -398,6 +412,7 @@ footer {
 
   width: 100%;
   height: 50vh;
+
   align-items: center;
   overflow: hidden;
 }
@@ -409,6 +424,7 @@ footer {
   height: 600px;
   position: absolute;
   left: 0;
+
   justify-content: center;
   align-items: center;
 
@@ -430,11 +446,11 @@ footer {
   height: 100%;
   width: 20em;
 
-  transition: 0.5s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
   border-radius: 10px;
+
+  transition: 0.5s;
 }
 
 .button {
@@ -460,6 +476,7 @@ footer {
 #slider-span4:target~.image-slider #button-4 {
   width: 25em;
   height: auto;
+
   margin: 0 0.7em;
 
   background-color: transparent;
