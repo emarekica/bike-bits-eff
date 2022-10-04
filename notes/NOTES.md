@@ -8,21 +8,17 @@
 
 - Kada pišemo CSS pravila, je li bolje pratiti abecedu ili kako se pojavljuju na stranici?
 
-- Pojavljivanje u HTML-u.
+- _Pojavljivanje u HTML-u._
 
 - Kada imam veliki blok CSS-a koji se odnosi na dio stranice ("Blog post thumbnails", "About" sekcija), da ga odvojim u zasebni stylesheet ili da bude u main.css? 
 
 
-- Yes.
+- _Da._
 
 - Trebali stavljati klasu na element, ako se ta klasa nikada neće koristiti u CSS-u niti JS-u?
 
-- No.
+- _Ne._
 
-
-<br><br>
-
-- 
 
 <br><hr /><br>
 
@@ -38,10 +34,75 @@
 
 <br><hr /><br>
 
+<br><br>
+
+
+[MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)
+<br>
+
+- media/content type 
+
+- string sent along with a file indicating the type of the file describing the content format
+
+- serves the same purpose as filename extensions traditionally do on Windows
+
+<br><br>
+
 ## 1. HTML
 
 <br>
 
+**A**
+<br>
+
+[anchor](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+
+<br>
+
+- creates a hyperlink to anzthing URL can address
+
+- content within each `a` should indicate the link's destination
+
+- ig `href` attribute present, pressing the `enter` key while focused on the `a` element will activate it
+<br>
+
+    <p>You can reach Michael at:</p>
+
+    <ul>
+      <li><a href="https://example.com">Website</a></li>
+      <li><a href="mailto:m.bluth@example.com">Email</a></li>
+      <li><a href="tel:+123456789">Phone</a></li>
+    </ul>
+<br><br>
+
+Two ways of connecting `a` to another element:
+<br>
+
+    <h2 id="gallery title">Gallery title</hr2>
+    <a href="gallery-title"></a> 
+
+    <h2 id="mirko">Mirko</h2>
+    <a name="#mirko"></a>
+
+<br><hr /><br>
+
+**C**
+
+<br>
+
+[charset](https://developer.mozilla.org/en-US/docs/Glossary/character_encoding)
+<br>
+
+- character encoding
+
+- defines a mapping between bytes and text (a sequence of bytes allows for different textual interpretations)
+
+- by specifying a particular encoding (such as UTF-8), we specify how the sequence of bytes is to be interpreted
+
+- ensures you can use characters from all human languages
+<br>
+
+    <meta charset="utf-8" />
 
 
 <br><hr /><br>
@@ -49,6 +110,13 @@
 ## 2. CSS
 
 <br>
+
+**A**
+<br>
+
+[]()
+
+<br><hr /><br>
 
 **B**
 
@@ -159,6 +227,30 @@ Available types: "woff", "woff2", "truetype", "opentype", "embedded-opentype","s
 
 **P**
 <br>
+
+**PRE- vs POST-PROCESSPRS**
+
+- _pre-processors_ parse and compile CSS extention language into plain CSS
+- has own stzlesheet language
+
+- use them for color schemes, font-face mixins, layout mixins etc.
+
+- don't use them for cross-browser fixes like vendor prefixes and polyfills
+<br><br>
+
+- _post-processors_ parse and process CSS and add vendor prefixes 
+
+- applies automation/repetition
+
+- for cross-browser fixes, images, fonts, linters ... [see list](https://github.com/postcss/postcss#tools)
+
+
+<br>
+
+
+<br>
+
+<br><br>
 
 [:pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 <br>
