@@ -25,7 +25,7 @@ Two ways of connecting `a` to another element (`name` is deprecated):
 <br>
 
     <h2 id="gallery title">Gallery title</hr2>
-    <a href="gallery-title"></a> 
+    <a href="#gallery-title"></a> 
 
     <h2 id="mirko">Mirko</h2>
     <a name="#mirko"></a>

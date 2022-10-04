@@ -59,13 +59,14 @@
 
 <br>
 
-- creates a hyperlink to anzthing URL can address
+- creates a hyperlink to anything URL can address
 
 - content within each `a` should indicate the link's destination
 
 - ig `href` attribute present, pressing the `enter` key while focused on the `a` element will activate it
 <br>
 
+```
     <p>You can reach Michael at:</p>
 
     <ul>
@@ -73,13 +74,24 @@
       <li><a href="mailto:m.bluth@example.com">Email</a></li>
       <li><a href="tel:+123456789">Phone</a></li>
     </ul>
+```    
+<br>
+
+<p>You can reach Michael at:</p>
+
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+
 <br><br>
 
-Two ways of connecting `a` to another element:
+Two ways of connecting `a` to another element (`name` deprecated):
 <br>
 
     <h2 id="gallery title">Gallery title</hr2>
-    <a href="gallery-title"></a> 
+    <a href="#gallery-title"></a> 
 
     <h2 id="mirko">Mirko</h2>
     <a name="#mirko"></a>
@@ -202,7 +214,7 @@ Output: "Some quotes", he said, "are better than none."
 `for`
 <br>
 
-    The value of the `for` attribute must be a single `id` for a labelable form-related element in the same document as the `label` element. So, any given label element can be associated with only one form control.
+The value of the `for` attribute must be a single `id` for a labelable form-related element in the same document as the `label` element. So, any given label element can be associated with only one form control.
 
 <br><br>    
 
