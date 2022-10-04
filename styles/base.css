@@ -20,6 +20,7 @@ body {
 
 header {
     display: flex;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -27,16 +28,19 @@ header {
 
 aside {
     display: flex;
+
     flex-flow: row nowrap;
     align-items: baseline;
     justify-content: center;
+    margin: 2em 2em 1em 2em;
+
     font-size: 1.5em;
 
-    margin: 2em 2em 1em 2em;
 }
 
 a {
     margin: 0 1.2em;
+
     text-decoration: none;
     color: #595858;
 }
@@ -51,16 +55,16 @@ li {
 }
 
 h1 {
-    font-family: Ailerons;
     color: #fff;
+    font-family: Ailerons;
     font-size: 5em;
-    text-align: center;
     line-height: 1.6;
+    text-align: center;
 }
 
 h2 {
-    font-family: Alegreya Sans SC, sans-serif;
     color: #737373;
+    font-family: Alegreya Sans SC, sans-serif;
     font-size: 3em;
     font-weight: 300;
     text-align: center;
@@ -77,6 +81,7 @@ img {
 
 .soc-media {
     display: flex;
+
     flex-direction: row;
     align-items: baseline;
     align-self: center;
