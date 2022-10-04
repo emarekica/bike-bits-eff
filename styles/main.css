@@ -48,7 +48,6 @@
   text-transform: uppercase;
 }
 
-/* BUG: Interferes with form from CONTACT MODAL >> rename */
 .header__form--searchbar {
   margin: 0.5em 0.5em 1.5em 0.5em;
   display: flex;
@@ -86,13 +85,8 @@ h1 {
   color: #fff;
   font-size: 5em;
   text-align: center;
-  /* line-height: 1.6; */
 }
 
-.title__down {
-  display: block;
-
-}
 
 /* --- search bar --- */
 
@@ -139,8 +133,6 @@ input[type="search"]:focus {
   letter-spacing: 0.1em;
 }
 
-/* --- h1 animation --- */
-
 .cover-img {
   /* covers the whole page */
   width: 150vw;
@@ -151,30 +143,45 @@ input[type="search"]:focus {
   object-fit: cover;
 }
 
+/* --- h1 animation --- */
+
 .box-right {
-  position: absolute;
-  top: 52.5%;
+
   left: 30%;
+  transform: translateY(2em);
+  display: inline-block;
+  background-color: #cacaca35;
+
+  width: 80vw;
+
+  border-radius: 5px;
+
+  position: relative;
+  height: 2em;
+}
+
+.box-left {
+  position: relative;
+  transform: translateY(-1.5em);
+
+  right: 30%;
 
   display: inline-block;
   background-color: #cacaca35;
-  height: 8em;
+  height: 2em;
   width: 80vw;
 
   border-radius: 5px;
 }
 
-.box-left {
-  position: absolute;
-  top: 70%;
-  right: 30%;
+.title__up::after {
+  content: "Discover";
+  display: block;
+}
 
-  display: inline-block;
-  background-color: #cacaca35;
-  height: 8em;
-  width: 80vw;
-
-  border-radius: 5px;
+.title__down::before {
+  content: "cycling";
+  display: block;
 }
 
 /* --- blogpost thumbnails --- */

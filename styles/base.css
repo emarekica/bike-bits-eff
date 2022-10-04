@@ -51,12 +51,6 @@ li {
 }
 
 h1 {
-    position: absolute;
-
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -78%);
-
     font-family: Ailerons;
     color: #fff;
     font-size: 5em;
