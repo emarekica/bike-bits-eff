@@ -6,18 +6,7 @@
 
 <br>
 
-- Kada pišemo CSS pravila, je li bolje pratiti abecedu ili kako se pojavljuju na stranici?
 
-- _Pojavljivanje u HTML-u._
-
-- Kada imam veliki blok CSS-a koji se odnosi na dio stranice ("Blog post thumbnails", "About" sekcija), da ga odvojim u zasebni stylesheet ili da bude u main.css? 
-
-
-- _Da._
-
-- Trebali stavljati klasu na element, ako se ta klasa nikada neće koristiti u CSS-u niti JS-u?
-
-- _Ne._
 
 
 <br><hr /><br>
@@ -33,8 +22,6 @@
 3. [JS](#3-js)
 
 <br><hr /><br>
-
-<br><br>
 
 
 [MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)
@@ -66,7 +53,7 @@
 - ig `href` attribute present, pressing the `enter` key while focused on the `a` element will activate it
 <br>
 
-```
+``
     <p>You can reach Michael at:</p>
 
     <ul>
@@ -74,7 +61,7 @@
       <li><a href="mailto:m.bluth@example.com">Email</a></li>
       <li><a href="tel:+123456789">Phone</a></li>
     </ul>
-```    
+``
 <br>
 
 <p>You can reach Michael at:</p>
@@ -115,6 +102,61 @@ Two ways of connecting `a` to another element (`name` deprecated):
 <br>
 
     <meta charset="utf-8" />
+
+<br><br>
+
+**I**
+<br>
+
+[Input type="checkbox"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+<br>
+
+- elements of this type rendered by default as boxes that are checked (ticked) when activated
+
+- select single or multiple values for submission in a form (or not)
+
+- `value` (string) given to the data submitted with the checkbox's `name`
+
+
+<br><br>
+
+**L**
+<br>
+
+[label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+<br>
+
+- caption for connected element
+
+- connect with the element's `id` with attribute `for` with same value
+<br>
+
+`input`: `id`
+`label`: `for`
+
+<br>
+
+    <input type="checkbox" name="cheese" id="cheese">
+    <label for="cheese">Do you like cheese?</label>
+<br><br>
+
+Or nest the `input` directly inside the `label`, in which case the for and id attributes are not needed because the association is implicit.
+<br>
+
+    <label>
+      Do you like peas?
+      <input type="checkbox" name="peas" />
+    </label>
+
+
+<br><br>
+
+### `label` + `input`
+<br>
+
+- label txt **visually & programmatically** associated with corresponding txt input
+
+- click/touch/tap on `label` passes the focus to associated `input` > increased hit area for focusing the input
 
 
 <br><hr /><br>
@@ -197,13 +239,31 @@ Output: "Some quotes", he said, "are better than none."
 
 <br><br>
 
+[box-sizing: border-box and content-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+<br>
+
+Useful to put it on layout elements.
+
+`box-sizing: border-box` makes dealing with the sizes of elements much easier. It tells the browser to account for any border and padding in the values you specify for an element's width and height. **If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width**.
+<br>
+
+On the other hand, when using `position: relative` or `position: absolute`, use of `box-sizing: content-box` because it allows the **positioning values to be relative to the content, and independent of changes to border and padding sizes**, which is sometimes desirable.
+
 <br><hr /><br>
 
 **F**
 
-- [flex: Difference between ALIGN-ITENS and ALIGN-CONTENT](https://betterprogramming.pub/flexbox-align-items-and-align-content-a60b6f8451e3)
+[flex: Difference between ALIGN-ITEMS and ALIGN-CONTENT](https://betterprogramming.pub/flexbox-align-items-and-align-content-a60b6f8451e3)
+<br><br>
 
-- [flex-grow ](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
+`align-content` manages the space between the lines when items wrap. 
+<br>
+
+`align-items` aligns the items relative to each other when sizes of items are different. When the size of the items are the same and there is only one line, they behave similarly.
+
+<br><br>
+
+[flex-grow ](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
 
 - sets the flex grow factor of a flex item's main size (either width or height of the item which is dependent on the flex-direction value)
 
@@ -218,16 +278,33 @@ The value of the `for` attribute must be a single `id` for a labelable form-rela
 
 <br><br>    
 
-- [format (in @font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+[format (in @font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 <br>
 
 Available types: "woff", "woff2", "truetype", "opentype", "embedded-opentype","svg"
 
 <br><br>
 
+**M**
+<br>
+
+[meta](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv)
+<br>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<br><br>
+
+`http-equiv` defines a pragma directive. The attribute is named http-equiv(alent) because all the allowed values are names of particular HTTP headers:
+
+`x-ua-compatible` If specified, the content attribute must have the value `IE=edge`. User agents are required to ignore this pragma. 
+
+`X-UA-Compatible` is a document mode meta tag that allows web authors to choose what version of Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
+
+<br><br>
+
 **N**
 
-- [name (input)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name)
+[name (input)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name)
 
 - string specifying a name for the input control
 
@@ -323,6 +400,29 @@ HTML:
 
 CSS: `p:target {}`
 <br><br>
+
+**V**
+<br>
+
+[viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<br>
+
+Area of the window in which web content can be seen. 
+
+This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.
+<br><br>
+
+`width`
+<br>
+
+**Controls the size of the viewport**. It can be set to a specific number of **pixels** like width=600 or to the special value **device-width**, which is 100vw, or 100% of the viewport width.
+<br>
+
+`initial-scale`
+<br>
+Controls the zoom level when the page is first loaded. Minimum: 0.1. Maximum: 10. Default:1
 
 
 <br><hr /><br>
