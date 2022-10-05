@@ -165,6 +165,75 @@ CSS:
 
 <br><br>
 
+### `:focus`, `:hover`, `:` WHEN TO USE WHICH
+<br>
+
+`:hover`
+<br>
+
+Also called the “pointer hover pseudo-class”, applies when a pointing device interacts with an element without necessarily activating it.
+
+A typical example of this is when a **mouse** hovers over an element.
+
+For **keyboard**, the `:hover` pseudo-class is never triggered. The keyboard is not considered a “pointer” device and so can’t apply to this pointer hover pseudo-class.
+<br><br>
+
+`:focus`
+<br>
+
+Applies when an element is in a state that is ready to be interacted with, i.e. it has the focus of the input device. When this applies differs quite greatly between the different input devices.
+
+When using a **mouse** or similar pointing device, the `:focus` pseudo-class will apply once the user has begun activating the element and, importantly, it will continue to stay in focus until the user activates another element by clicking.
+
+Focusing on an element with **keyboard** is very similar to hovering over it for mouse users. I like to think of the :focus pseudo-class as a hover state for keyboard devices, because it signals a similar intention for interaction.
+
+<br><br>
+
+`:active`
+<br>
+
+Applies _during the period in which the element is being activated_. For example, if using a **mouse**, it would be the time between when the mouse button is clicked and when it is released.
+
+<br><br>
+
+Most of the times when an element is being clicked with a mouse, all three conditions are valid - the mouse if over the element, the element is in focus, and the element is being activated.
+<br>
+
+        button:hover:focus:active {
+        background-color: #ffdb3a;
+        }
+<br>
+
+Since all three events are applied during a typical click event, the cascade takes over and the last-defined style wins.
+<br>
+
+The best way to order your pseudo-class styles are `:hover` then `:focus` then `:active`.
+<br>
+
+        button:hover {
+        background-color: green;
+        }
+
+        button:focus {
+        background-color: blue;
+        }
+
+        button:active {
+        background-color: red;
+        }
+<br>
+
+This will not apply on mobile (iOS) Safari.
+
+<br><br>
+
+
+
+[Article](https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/)
+
+<br><br>
+
+
 ### TOGGLE SIZE OF AN ELEMENT WITH :focus
 
 <br>
