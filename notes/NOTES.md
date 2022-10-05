@@ -117,6 +117,8 @@ Two ways of connecting `a` to another element (`name` deprecated):
 
 - `value` (string) given to the data submitted with the checkbox's `name`
 
+- `a`, `button`, `input` and `textarea` all have the `:focus` state by default
+
 
 <br><br>
 
