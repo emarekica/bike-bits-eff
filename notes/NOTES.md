@@ -103,6 +103,20 @@ Two ways of connecting `a` to another element (`name` deprecated):
 
 <br><br>
 
+[crossorigin attribute]()
+<br>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<br><br>
+
+The purpose of crossorigin attribute is used to **share the resources from one domain to another domain**. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains. The resources may include Audio, Video, Images, Link or external script that specifies whether to support a cross-origin request or not.
+<br>
+
+**CORS**: It stands for cross-origin resource sharing. It is a mechanism by which one webpage requests to another domain for fetching out the resource like audio, video, script, etc. from the third party server without leaking their credentials information.
+
+<br><hr/><br>
+
 **I**
 <br>
 
