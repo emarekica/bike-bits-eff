@@ -1,116 +1,112 @@
 /* general rules */
 
-
 /* ------- general ------- */
 
 @font-face {
-    font-family: "Ailerons";
-    src: url(/assets/font/Ailerons/Ailerons.ttf) format("truetype");
+  font-family: "Ailerons";
+  src: url(/assets/font/Ailerons/Ailerons.ttf) format("truetype");
 }
 
 html {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-    background-image: url("../../assets/backgrounds/isopleths.png");
+  background-image: url("../../assets/backgrounds/isopleths.png");
 
-    font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 header {
-    display: flex;
+  display: flex;
 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 aside {
-    display: flex;
+  display: flex;
 
-    flex-flow: row nowrap;
-    align-items: baseline;
-    justify-content: center;
-    margin: 2em 2em 1em 2em;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: center;
+  margin: 2em 2em 1em 2em;
 
-    font-size: 1.5em;
-
+  font-size: 1.5em;
 }
 
 a {
-    margin: 0 1.2em;
-
-    text-decoration: none;
-    color: #595858;
+  text-decoration: none;
+  color: #595858;
 }
 
 a:hover {
-    font-weight: bolder;
+  font-weight: bolder;
+  flex-shrink: 0;
 }
 
 li {
-    /* hides bullets */
-    list-style: none;
+  /* hides bullets */
+  list-style: none;
 }
 
 h1 {
-    color: #fff;
-    font-family: Ailerons;
-    font-size: 5em;
-    line-height: 1.6;
-    text-align: center;
+  color: #fff;
+  font-family: Ailerons;
+  font-size: 5em;
+  line-height: 1.6;
+  text-align: center;
 }
 
 h2 {
-    color: #737373;
-    font-family: Alegreya Sans SC, sans-serif;
-    font-size: 3em;
-    font-weight: 300;
-    text-align: center;
+  color: #737373;
+  font-family: Alegreya Sans SC, sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
 }
-
 
 /* IMGs */
 
 img {
-    display: flex;
-    max-width: 100%;
-    flex-grow: 1;
+  display: flex;
+  max-width: 100%;
+  flex-grow: 1;
 }
 
 .soc-media {
-    display: flex;
+  display: flex;
 
-    flex-direction: row;
-    align-items: baseline;
-    align-self: center;
-    justify-items: left;
-    text-align: end;
+  flex-direction: row;
+  align-items: baseline;
+  align-self: center;
+  justify-items: left;
+  text-align: end;
 }
 
 .facebook,
 .instagram {
-    margin: 0 0.5em 1em 0.5em;
+  margin: 0 0.5em 1em 0.5em;
 }
 
 /* ------- lines ------- */
 
 .line-1 {
-    border-bottom: 1px solid #7373736e;
-    margin: 2.5em 32em;
+  border-bottom: 1px solid #7373736e;
+  margin: 2.5em 32em;
 }
 
 .line-2 {
-    border-bottom: 1px solid #7373736e;
-    grid-column: 3;
-    grid-row: 1 / 2;
+  border-bottom: 1px solid #7373736e;
+  grid-column: 3;
+  grid-row: 1 / 2;
 
-    margin: 0 14em 3em 14em;
+  margin: 0 14em 3em 14em;
 }
 
 .line-3 {
-    border-bottom: 1px solid #7373736e;
-    margin: 8em 20em 0 20em;
-    padding: 5em 5em;
+  border-bottom: 1px solid #7373736e;
+  margin: 8em 20em 0 20em;
+  padding: 5em 5em;
 }
