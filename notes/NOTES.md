@@ -271,7 +271,32 @@ On the other hand, when using `position: relative` or `position: absolute`, use 
 
 <br><hr /><br>
 
+**C**
+<br>
+
+[calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+<br>
+
+- calculations when specifying CSS property values.
+
+- length, angle, time, %, number (integer or floating point)
+
+<br>
+
+    calc(10px + 100px);
+    calc(100% + 30px)
+    calc(2em * 5)
+
+<br><br>
+
+<br><br>
+
+[CSS trick article](https://css-tricks.com/a-complete-guide-to-calc-in-css/)
+
+<br><hr /><br>
+
 **F**
+<br>
 
 [flex: Difference between ALIGN-ITEMS and ALIGN-CONTENT](https://betterprogramming.pub/flexbox-align-items-and-align-content-a60b6f8451e3)
 <br><br>

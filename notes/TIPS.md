@@ -262,7 +262,48 @@ Write what & how it should be animated when state is changed.
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     }
 
-<br> <br>
+<br><br>
+
+**Example with switcher button**
+<br>
+
+    parent: `position:relative`
+
+    child: `position: absolute`
+
+<br>
+
+`left: 0;` = `0%` or start of the element
+
+`right: 0;` = `100%` or end of the element
+
+Moving the child on click horizontally ) with `calc()` or `transform: translateX()` or `transform: translateX( calc() )`, where the child element starts from the `0%` of its parent and ends at `100%` of its parent.
+
+Calculate it with the `calc()` by substracting the child's width from 100% of the parent.
+
+_(other element's properties are left out)_
+
+<br><br>
+
+```
+.switcher {
+  position: relative;
+}
+
+.enabled--round {
+  position: absolute;
+  left: 0;
+
+  transition: all 0.5s ease;
+}
+
+<!-- animation -->
+<!-- span > span refers to .enabled--round because it is span inside of a span -->
+
+input:checked + span > span {
+  padding: 0.2rem 0.4rem;
+}
+```
 
 <br><hr /><br>
 
