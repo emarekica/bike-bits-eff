@@ -27,13 +27,13 @@ let scene = new ScrollMagic.Scene({
 
 // ANIMATION
 
-// --- header
+// --- Title
 
 headerTimeline.fromTo("h1", { opacity: 0 }, { opacity: 1, duration: 8 });
 
 headerTimeline
-  .fromTo(".box-left", { x: "-100%" }, { x: "0%", duration: 5 }, "-=8")
-  .fromTo(".box-right", { x: "100%" }, { x: "0%", duration: 5 }, "-=8");
+  .fromTo(".box-left", { x: "-100%" }, { x: "50%", duration: 5 }, "-=8")
+  .fromTo(".box-right", { x: "100%" }, { x: "-50%", duration: 5 }, "-=8");
 
 //
 
