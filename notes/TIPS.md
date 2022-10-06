@@ -235,6 +235,14 @@ This will not apply on mobile (iOS) Safari.
 
 <br><hr /><br>
 
+### JUMPING ELEMENTS WHEN HIDE/SHOW TOGGLE
+
+<br>
+
+Instead of `display:none` & `display: inline/inline-block/block`, use `opacity:0` & `opacity: 1`.
+
+<br><hr /><br>
+
 ### TRANSITION & ANIMATABLE PROPERTIES
 
 <br>
