@@ -1,4 +1,4 @@
-# TIPS n TRICKS 
+# TIPS n TRICKS
 
 <br>
 
@@ -19,13 +19,14 @@
 <br>
 
 ### CONNECTING ANCHOR TO OTHER ELEMENTS
+
 <br>
 
 Two ways of connecting `a` to another element (`name` is deprecated):
 <br>
 
     <h2 id="gallery title">Gallery title</hr2>
-    <a href="#gallery-title"></a> 
+    <a href="#gallery-title"></a>
 
     <h2 id="mirko">Mirko</h2>
     <a name="#mirko"></a>
@@ -48,8 +49,7 @@ HTML:
 
 <br><br>
 
-CSS: 
-
+CSS:
 
     .heading-primary {
         display: block;
@@ -59,7 +59,7 @@ CSS:
         position: absolute;
         top: 45%;
         left: 50%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
     }
 
 <br><br>
@@ -75,6 +75,7 @@ CSS:
 <br>
 
 ### ADD "x" WITH CSS
+
 <br>
 
 - `::after` class + `content` property
@@ -85,7 +86,6 @@ CSS:
 
 HTML:
 <br>
-
 
     <li><a href="#example1">Open example #1</a></li>
 
@@ -98,6 +98,7 @@ HTML:
         </figcaption>
     </figure>
     </div>
+
 <br><br>
 
 CSS:
@@ -166,6 +167,7 @@ CSS:
 <br><br>
 
 ### `:focus`, `:hover`, `:` WHEN TO USE WHICH
+
 <br>
 
 `:hover`
@@ -202,6 +204,7 @@ Most of the times when an element is being clicked with a mouse, all three condi
         button:hover:focus:active {
         background-color: #ffdb3a;
         }
+
 <br>
 
 Since all three events are applied during a typical click event, the cascade takes over and the last-defined style wins.
@@ -221,18 +224,47 @@ The best way to order your pseudo-class styles are `:hover` then `:focus` then `
         button:active {
         background-color: red;
         }
+
 <br>
 
 This will not apply on mobile (iOS) Safari.
 
 <br><br>
 
-
-
 [Article](https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/)
 
-<br><br>
+<br><hr /><br>
 
+### TRANSITION & ANIMATABLE PROPERTIES
+
+<br>
+
+[animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+<br>
+
+Not all properties are animatable.
+<br>
+
+When doing animation with transition, write the animation property under primary selector.
+
+Write what & how it should be animated when state is changed.
+<br>
+
+    .btn:link {
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+
+      /* offset-x | offset-y | blur-radius | color */
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+<br> <br>
+
+<br><hr /><br>
 
 ### TOGGLE SIZE OF AN ELEMENT WITH :focus
 
@@ -250,30 +282,29 @@ HTML:
     <a href="#">Test</a>
     <a href="#">Test</a>
     <a href="#">Test</a>
+
 <br>
 
 CSS:
 <br>
 
 a {
-    display: block;
-    width: 1em;
+display: block;
+width: 1em;
 }
 
 a:focus {
-    background: red;
-    color: white;
-    width: 3em;
+background: red;
+color: white;
+width: 3em;
 }
 
 <br><br>
-
-
-
 
 <br><br>
 
 ### SHOW / HIDE ELEMENT
+
 <br>
 
 This combination allows to click on things and animate
@@ -285,7 +316,7 @@ This combination allows to click on things and animate
     opacity: 0;
     pointer-events: none;
 
-<br><br>    
+<br><br>
 
 <br><hr /><br>
 

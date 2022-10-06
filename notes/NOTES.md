@@ -6,9 +6,6 @@
 
 <br>
 
-
-
-
 <br><hr /><br>
 
 ## CONTENT
@@ -23,11 +20,10 @@
 
 <br><hr /><br>
 
-
 [MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)
 <br>
 
-- media/content type 
+- media/content type
 
 - string sent along with a file indicating the type of the file describing the content format
 
@@ -51,16 +47,18 @@
 - content within each `a` should indicate the link's destination
 
 - ig `href` attribute present, pressing the `enter` key while focused on the `a` element will activate it
-<br>
+  <br>
 
 ``
-    <p>You can reach Michael at:</p>
+
+<p>You can reach Michael at:</p>
 
     <ul>
       <li><a href="https://example.com">Website</a></li>
       <li><a href="mailto:m.bluth@example.com">Email</a></li>
       <li><a href="tel:+123456789">Phone</a></li>
     </ul>
+
 ``
 <br>
 
@@ -78,7 +76,7 @@ Two ways of connecting `a` to another element (`name` deprecated):
 <br>
 
     <h2 id="gallery title">Gallery title</hr2>
-    <a href="#gallery-title"></a> 
+    <a href="#gallery-title"></a>
 
     <h2 id="mirko">Mirko</h2>
     <a name="#mirko"></a>
@@ -99,9 +97,9 @@ Two ways of connecting `a` to another element (`name` deprecated):
 - by specifying a particular encoding (such as UTF-8), we specify how the sequence of bytes is to be interpreted
 
 - ensures you can use characters from all human languages
-<br>
+  <br>
 
-    <meta charset="utf-8" />
+      <meta charset="utf-8" />
 
 <br><br>
 
@@ -119,7 +117,6 @@ Two ways of connecting `a` to another element (`name` deprecated):
 
 - `a`, `button`, `input` and `textarea` all have the `:focus` state by default
 
-
 <br><br>
 
 **L**
@@ -131,7 +128,7 @@ Two ways of connecting `a` to another element (`name` deprecated):
 - caption for connected element
 
 - connect with the element's `id` with attribute `for` with same value
-<br>
+  <br>
 
 `input`: `id`
 `label`: `for`
@@ -140,6 +137,7 @@ Two ways of connecting `a` to another element (`name` deprecated):
 
     <input type="checkbox" name="cheese" id="cheese">
     <label for="cheese">Do you like cheese?</label>
+
 <br><br>
 
 Or nest the `input` directly inside the `label`, in which case the for and id attributes are not needed because the association is implicit.
@@ -150,16 +148,15 @@ Or nest the `input` directly inside the `label`, in which case the for and id at
       <input type="checkbox" name="peas" />
     </label>
 
-
 <br><br>
 
 ### `label` + `input`
+
 <br>
 
 - label txt **visually & programmatically** associated with corresponding txt input
 
 - click/touch/tap on `label` passes the focus to associated `input` > increased hit area for focusing the input
-
 
 <br><hr /><br>
 
@@ -170,7 +167,30 @@ Or nest the `input` directly inside the `label`, in which case the for and id at
 **A**
 <br>
 
-[]()
+[animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+<br>
+
+Not all properties are animatable.
+<br>
+
+When doing animation with transition, write the animation property under primary selector.
+
+Write what & how it should be animated when state is changed.
+<br>
+
+    .btn:link {
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+
+      /* offset-x | offset-y | blur-radius | color */
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+<br> <br>
 
 <br><hr /><br>
 
@@ -188,16 +208,14 @@ Or nest the `input` directly inside the `label`, in which case the for and id at
 
 - inline
 
-- used to add cosmetic content to an element with the content property (replaces element with generated value) 
-<br><br>
-
+- used to add cosmetic content to an element with the content property (replaces element with generated value)
+  <br><br>
 
 <br>
 
 - **::before creates** pseudo-element that is first child of the selected element (before the element)
 
 - **::after creates** pseudo-element that is last child of sel. element (after the element)
-
 
 <br><br>
 
@@ -215,7 +233,7 @@ Or nest the `input` directly inside the `label`, in which case the for and id at
 
 <br><br>
 
-HTML: 
+HTML:
 <br>
 
     <q>Some quotes</q>, he said, <q>are better than none.</q>
@@ -234,10 +252,10 @@ CSS:
       content: "»";
       color: red;
     }
+
 <br><br>
 
 Output: "Some quotes", he said, "are better than none."
-
 
 <br><br>
 
@@ -258,7 +276,7 @@ On the other hand, when using `position: relative` or `position: absolute`, use 
 [flex: Difference between ALIGN-ITEMS and ALIGN-CONTENT](https://betterprogramming.pub/flexbox-align-items-and-align-content-a60b6f8451e3)
 <br><br>
 
-`align-content` manages the space between the lines when items wrap. 
+`align-content` manages the space between the lines when items wrap.
 <br>
 
 `align-items` aligns the items relative to each other when sizes of items are different. When the size of the items are the same and there is only one line, they behave similarly.
@@ -278,7 +296,7 @@ On the other hand, when using `position: relative` or `position: absolute`, use 
 
 The value of the `for` attribute must be a single `id` for a labelable form-related element in the same document as the `label` element. So, any given label element can be associated with only one form control.
 
-<br><br>    
+<br><br>
 
 [format (in @font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 <br>
@@ -294,11 +312,12 @@ Available types: "woff", "woff2", "truetype", "opentype", "embedded-opentype","s
 <br>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 <br><br>
 
 `http-equiv` defines a pragma directive. The attribute is named http-equiv(alent) because all the allowed values are names of particular HTTP headers:
 
-`x-ua-compatible` If specified, the content attribute must have the value `IE=edge`. User agents are required to ignore this pragma. 
+`x-ua-compatible` If specified, the content attribute must have the value `IE=edge`. User agents are required to ignore this pragma.
 
 `X-UA-Compatible` is a document mode meta tag that allows web authors to choose what version of Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
 
@@ -327,17 +346,15 @@ Available types: "woff", "woff2", "truetype", "opentype", "embedded-opentype","s
 - use them for color schemes, font-face mixins, layout mixins etc.
 
 - don't use them for cross-browser fixes like vendor prefixes and polyfills
-<br><br>
+  <br><br>
 
-- _post-processors_ parse and process CSS and add vendor prefixes 
+- _post-processors_ parse and process CSS and add vendor prefixes
 
 - applies automation/repetition
 
 - for cross-browser fixes, images, fonts, linters ... [see list](https://github.com/postcss/postcss#tools)
 
-
 <br>
-
 
 <br>
 
@@ -366,8 +383,8 @@ Keyword added to a selector that lets you style a specific part of the selected 
 
 - pseudo-class
 
-- represents a unique element (the _target element_) with an **id matching the URL's fragment** (denoted by the `#` sign) 
-<br>
+- represents a unique element (the _target element_) with an **id matching the URL's fragment** (denoted by the `#` sign)
+  <br>
 
 URL: _http://www.example.com/index.html#section2_
 <br>
@@ -379,7 +396,7 @@ Selecting the element with `:target` when the current URL:
 <br>
 
 CSS:
-<br> 
+<br>
 
     /* Selects an element with an ID matching the current URL's fragment */
     :target {
@@ -388,9 +405,9 @@ CSS:
 
 <br><br>
 
-Another combo: 
+Another combo:
 
-HTML: 
+HTML:
 <br>
 
     <a href="#p1">Link to paragraph 1</a>
@@ -398,6 +415,7 @@ HTML:
 
     <a href="#p2">Link to paragraph 2</a>
     <p id="p2">TxT</p>
+
 <br>
 
 CSS: `p:target {}`
@@ -409,9 +427,10 @@ CSS: `p:target {}`
 [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <br>
 
-Area of the window in which web content can be seen. 
+Area of the window in which web content can be seen.
 
 This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.
 <br><br>
@@ -425,7 +444,6 @@ This is often not the same size as the rendered page, in which case the browser 
 `initial-scale`
 <br>
 Controls the zoom level when the page is first loaded. Minimum: 0.1. Maximum: 10. Default:1
-
 
 <br><hr /><br>
 
