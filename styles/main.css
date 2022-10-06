@@ -1,6 +1,6 @@
 /* specific rules */
 
-/* --- logos --- */
+/* --- Logos --- */
 
 .header__logo--img {
   float: left;
@@ -35,7 +35,7 @@
   color: #7f7f7f;
 }
 
-/* --- navigation --- */
+/* --- Navigation --- */
 
 .navigation__up {
   display: flex;
@@ -60,37 +60,7 @@
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-
-
-/* --- title --- */
-
-.title {
-  display: block;
-}
-
-.title__container {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-
-  transform: translate(50%, 50%);
-}
-
-h1 {
-  position: absolute;
-
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -78%);
-
-  color: #fff;
-  font-family: Ailerons;
-  font-size: 5em;
-  text-align: center;
-}
-
-
-/* --- search bar --- */
+/* --- Search bar --- */
 
 input[type="search"] {
   background: white;
@@ -118,8 +88,9 @@ button[type="submit"] {
   margin: 0;
   width: 40px;
 
-  background:
-    transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
   border: 1px solid transparent;
   border-radius: inherit;
   opacity: 0.3;
@@ -151,25 +122,52 @@ input[type="search"]:focus {
   overflow: visible;
 }
 
-/* --- h1 animation --- */
+/* --- Title (animation)--- */
 
-.box-right {
+.title {
+  display: block;
+}
+
+/* .title__container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+
+  transform: translate(50%, 50%);
+} */
+
+h1 {
+  position: absolute;
+
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -78%);
+
+  color: #fff;
+  font-family: Ailerons;
+  font-size: 5em;
+  text-align: center;
+}
+
+.box-right::before {
   display: inline-block;
+  content: "";
 
-  position: relative;
+  position: absolute;
   left: 30%;
   height: 2em;
   width: 80vw;
-  transform: translateY(2em);
+  transform: translateY(-2em);
 
   background-color: #cacaca35;
   border-radius: 5px;
 }
 
-.box-left {
+.box-left::after {
   display: inline-block;
+  content: "";
 
-  position: relative;
+  position: absolute;
   right: 30%;
   height: 2em;
   width: 80vw;
@@ -179,18 +177,7 @@ input[type="search"]:focus {
   border-radius: 5px;
 }
 
-/* za box, ne txt, content "", unutra CSS od boxova */
-.title__up::after {
-  display: block;
-  content: "Discover";
-}
-
-.title__down::before {
-  display: block;
-  content: "cycling";
-}
-
-/* --- blogpost thumbnails --- */
+/* --- Blogpost thumbnails --- */
 
 #vrana,
 #dabrovi,
@@ -270,15 +257,15 @@ input[type="search"]:focus {
   grid-row: 2 / 3;
 }
 
-.thumbnail>a {
+.thumbnail > a {
   margin: 0;
 }
 
-a>img {
+a > img {
   opacity: 0.4;
 }
 
-a>p {
+a > p {
   color: #5c5c5c;
   font-size: 2em;
   font-weight: 400;
@@ -293,16 +280,15 @@ a>p {
   transition: 0.7s;
 }
 
-a:hover>img {
+a:hover > img {
   opacity: 1;
   transition: 0.7s;
 }
 
-a:hover>p {
+a:hover > p {
   opacity: 0;
   transition: 0.7s;
 }
-
 
 /* ------- Parallax "About me" ------- */
 
@@ -355,37 +341,14 @@ a:hover>p {
   word-break: break-all;
 }
 
-/* --- gallery --- */
-
+/* --- Gallery --- */
 
 .gallery__header {
   margin: 2em 0 0.5em 0;
   text-transform: capitalize;
 }
 
-
-
-/* --- footer-nav --- */
-
-#fb-img,
-#insta-img {
-  max-width: 1.7em;
-  margin: auto 0.5em;
-}
-
-.navigation__bottom {
-  display: flex;
-
-  justify-content: center;
-  margin: 0 0 2.5em 0;
-
-  font-size: 1em;
-  font-weight: 50;
-  text-transform: uppercase;
-}
-
-
-/* --- footer --- */
+/* --- Footer --- */
 
 .footer__main {
   display: flex;
@@ -410,7 +373,6 @@ li#contact2:hover {
 }
 
 /* --- Gallery slider --- */
-
 
 .slide-container {
   display: flex;
@@ -470,14 +432,14 @@ li#contact2:hover {
   background-color: transparent;
 }
 
-#slider-span1:target~.image-slider #img1,
-#slider-span1:target~.image-slider #button-1,
-#slider-span2:target~.image-slider #img2,
-#slider-span2:target~.image-slider #button-2,
-#slider-span3:target~.image-slider #img3,
-#slider-span3:target~.image-slider #button-3,
-#slider-span4:target~.image-slider #img4,
-#slider-span4:target~.image-slider #button-4 {
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1,
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2,
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3,
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
   width: 25em;
   height: auto;
   margin: 0 0.7em;
@@ -485,10 +447,10 @@ li#contact2:hover {
   background-color: transparent;
 }
 
-#slider-span1:target~.image-slider,
-#slider-span2:target~.image-slider,
-#slider-span3:target~.image-slider,
-#slider-span4:target~.image-slider {
+#slider-span1:target ~ .image-slider,
+#slider-span2:target ~ .image-slider,
+#slider-span3:target ~ .image-slider,
+#slider-span4:target ~ .image-slider {
   left: 0%;
 }
 
@@ -506,18 +468,16 @@ li#contact2:hover {
   z-index: 10;
 }
 
-
 /* closing click on img */
 
 .gallery__exit--thumb {
   display: none;
 }
 
-#slider-span1:target~.image-slider .gallery__exit--thumb,
-#slider-span2:target~.image-slider .gallery__exit--thumb,
-#slider-span3:target~.image-slider .gallery__exit--thumb,
-#slider-span4:target~.image-slider .gallery__exit--thumb {
-
+#slider-span1:target ~ .image-slider .gallery__exit--thumb,
+#slider-span2:target ~ .image-slider .gallery__exit--thumb,
+#slider-span3:target ~ .image-slider .gallery__exit--thumb,
+#slider-span4:target ~ .image-slider .gallery__exit--thumb {
   display: block;
 
   /* background-color: rgba(255, 0, 0, 0.563); */
@@ -527,4 +487,23 @@ li#contact2:hover {
   width: 25em;
 
   transition: 0.5s;
+}
+
+/* --- Footer navigation --- */
+
+#fb-img,
+#insta-img {
+  max-width: 1.7em;
+  margin: auto 0.5em;
+}
+
+.navigation__bottom {
+  display: flex;
+
+  justify-content: center;
+  margin: 0 0 2.5em 0;
+
+  font-size: 1em;
+  font-weight: 50;
+  text-transform: uppercase;
 }
