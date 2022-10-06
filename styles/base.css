@@ -31,7 +31,7 @@ aside {
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: center;
-  margin: 2em 2em 1em 2em;
+  margin: 2em 1em 1em 2em;
 
   font-size: 1.5em;
 }

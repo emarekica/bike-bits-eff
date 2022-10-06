@@ -40,7 +40,7 @@
 .header__navigation--up {
   display: flex;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 20em;
 
   font-size: 0.8em;
@@ -141,7 +141,7 @@ h1 {
   text-align: center;
 }
 
-.box-right::before {
+.title__up::before {
   display: inline;
   content: "";
 
@@ -155,7 +155,7 @@ h1 {
   border-radius: 5px;
 }
 
-.box-left::after {
+.title__down::before {
   display: inline;
   content: "";
 
@@ -340,30 +340,6 @@ a:hover > p {
   text-transform: capitalize;
 }
 
-/* --- Footer --- */
-
-.footer__main {
-  display: flex;
-  flex-direction: column;
-  margin: 3em 0 4em 0;
-}
-
-#home2,
-#about2,
-#blog2,
-#contact2 {
-  margin: 0 2em;
-}
-
-#contact2 {
-  color: #595858;
-}
-
-li#contact2:hover {
-  font-weight: bolder;
-  cursor: pointer;
-}
-
 /* --- Gallery slider --- */
 
 .slide-container {
@@ -411,7 +387,32 @@ li#contact2:hover {
   transition: 0.5s;
 }
 
-.button {
+.open__close {
+  opacity: 1;
+  background-color: rgba(255, 0, 0, 0.256);
+
+  position: absolute;
+
+  width: 15em;
+  height: 15em;
+
+  transition: 0.5s;
+}
+
+/* open / close gallery */
+
+.open__close:focus {
+  /* opacity: 1;
+  background-color: rgba(255, 0, 0, 0.256); */
+
+  width: 25em;
+  height: 25em;
+  margin: 0 0.7em;
+
+  cursor: pointer;
+}
+
+/* .button {
   position: absolute;
 
   width: 20em;
@@ -422,9 +423,9 @@ li#contact2:hover {
 
 .button:hover {
   background-color: transparent;
-}
+} */
 
-#slider-span1:target ~ .image-slider #img1,
+/* #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~ .image-slider #button-1,
 #slider-span2:target ~ .image-slider #img2,
 #slider-span2:target ~ .image-slider #button-2,
@@ -444,11 +445,11 @@ li#contact2:hover {
 #slider-span3:target ~ .image-slider,
 #slider-span4:target ~ .image-slider {
   left: 0%;
-}
+} */
 
 /* closing "x" */
 
-.gallery__exit {
+/* .gallery__exit {
   display: inline-block;
 
   position: relative;
@@ -458,11 +459,11 @@ li#contact2:hover {
   font-family: Alegreya Sans SC;
 
   z-index: 10;
-}
+} */
 
 /* closing click on img */
 
-.gallery__exit--thumb {
+/* .gallery__exit--thumb {
   display: none;
 }
 
@@ -472,13 +473,36 @@ li#contact2:hover {
 #slider-span4:target ~ .image-slider .gallery__exit--thumb {
   display: block;
 
-  /* background-color: rgba(255, 0, 0, 0.563); */
   position: absolute;
 
   height: 25em;
   width: 25em;
 
   transition: 0.5s;
+} */
+
+/* --- Footer --- */
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0 4em 0;
+}
+
+#home2,
+#about2,
+#blog2,
+#contact2 {
+  margin: 0 2em;
+}
+
+#contact2 {
+  color: #595858;
+}
+
+li#contact2:hover {
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 /* --- Footer navigation --- */

@@ -44,6 +44,7 @@
         <p class="header__logo--txt">BIKE-BITS</p>
       </div>
 
+      <!-- *BUG: flex doesn't fix it -->
       <aside>
         <nav class="header__navigation--up">
           <a href="/index.html">Home</a>
@@ -73,17 +74,17 @@
         class="cover-img"
       />
 
-      <!-- <div class="title__container"> -->
+      <!-- BUG: div inside span -->
       <div>
         <h1 class="title">
           <span class="title__up">
-            Discover
-            <div class="box-right"></div>
+            <strong>Discover</strong>
+            <!-- <span class="box-right"></span> -->
           </span>
 
-          <span class="title__down"
-            >cycling
-            <div class="box-left"></div>
+          <span class="title__down">
+            <strong>cycling</strong>
+            <!-- <span class="box-left"></span> -->
           </span>
         </h1>
       </div>
@@ -201,19 +202,21 @@
         <a href="/gallery/gallery.html" target="_blank">Gallery</a>
       </h2>
 
-      <a href="#gallery__fragment" class="gallery__exit">x</a>
+      <!-- <a href="#gallery__fragment" class="gallery__exit">x</a> -->
 
       <!-- Slider -->
 
       <div class="slide-container">
-        <span class="slider-span" id="slider-span1"></span>
+        <!-- <span class="slider-span" id="slider-span1"></span>
         <span class="slider-span" id="slider-span2"></span>
         <span class="slider-span" id="slider-span3"></span>
         <span class="slider-span" id="slider-span4"></span>
-        <span class="slider-span" id="slider-span5"></span>
+        <span class="slider-span" id="slider-span5"></span> -->
 
         <div class="image-slider">
           <div class="slides-div" id="slide-1">
+            <button class="open__close"></button>
+
             <img
               src="/assets/homepage/gallery1_sm.jpg"
               alt=""
@@ -222,9 +225,9 @@
             />
 
             <!-- opens -->
-            <a href="#slider-span1" class="button" id="button-1"></a>
+            <!-- <a href="#slider-span1" class="button" id="button-1"></a> -->
             <!-- closes -->
-            <a href="#gallery__fragment" class="gallery__exit--thumb"></a>
+            <!-- <a href="#gallery__fragment" class="gallery__exit--thumb"></a> -->
           </div>
 
           <div class="slides-div" id="slide-2">
@@ -235,8 +238,8 @@
               id="img2"
             />
 
-            <a href="#slider-span2" class="button" id="button-2"></a>
-            <a href="#gallery__fragment" class="gallery__exit--thumb"></a>
+            <!-- <a href="#slider-span2" class="button" id="button-2"></a>
+            <a href="#gallery__fragment" class="gallery__exit--thumb"></a> -->
           </div>
 
           <div class="slides-div" id="slide-3">
@@ -246,9 +249,9 @@
               class="img"
               id="img3"
             />
-
+            <!-- 
             <a href="#slider-span3" class="button" id="button-3"></a>
-            <a href="#gallery__fragment" class="gallery__exit--thumb"></a>
+            <a href="#gallery__fragment" class="gallery__exit--thumb"></a> -->
           </div>
 
           <div class="slides-div" id="slide-4">
@@ -258,9 +261,9 @@
               class="img"
               id="img4"
             />
-
+            <!-- 
             <a href="#slider-span4" class="button" id="button-4"></a>
-            <a href="#gallery__fragment" class="gallery__exit--thumb"></a>
+            <a href="#gallery__fragment" class="gallery__exit--thumb"></a> -->
           </div>
         </div>
       </div>

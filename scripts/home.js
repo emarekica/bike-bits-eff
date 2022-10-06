@@ -30,18 +30,20 @@ let scene = new ScrollMagic.Scene({
 // --- Title
 
 headerTimeline.fromTo(
-  ".title__up",
+  ".title__up strong",
   { opacity: 0 },
   { opacity: 1, duration: 8 }
 );
 
 headerTimeline.fromTo(
-  ".title__down",
+  ".title__down strong",
   { opacity: 0 },
   { opacity: 1, duration: 8 },
   "-=8"
 );
 
+// napraviti CSS varijantu
+// .box-left::before ili ::after (vidi doc)
 headerTimeline
   .fromTo(".box-left", { x: "-100%" }, { x: "50%", duration: 5 }, "-=8")
   .fromTo(".box-right", { x: "100%" }, { x: "-50%", duration: 5 }, "-=8");

@@ -321,6 +321,9 @@ input:checked + span > span {
 
 When you click on the test, it grows and has red background.
 When you click anywhere else, it closes back. **Browser handles returning to the state before :focus**.
+<br>
+
+`href` has to be the same.
 
 <br><br>
 
@@ -337,16 +340,16 @@ HTML:
 CSS:
 <br>
 
-a {
-display: block;
-width: 1em;
-}
+    a {
+      display: block;
+      width: 1em;
+    }
 
-a:focus {
-background: red;
-color: white;
-width: 3em;
-}
+    a:focus {
+      background: red;
+      color: white;
+      width: 3em;
+    }
 
 <br><br>
 
