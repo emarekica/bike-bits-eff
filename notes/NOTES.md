@@ -2,6 +2,12 @@
 
 <br>
 
+- DIFFERENCE: min-width, width, max-width
+
+- tags for styling (strong, i, span ...)
+
+<br><br>
+
 ## Questions
 
 <br>
