@@ -2,9 +2,15 @@
 
 /* ------- general ------- */
 
-@font-face {
+/* @font-face {
   font-family: "Ailerons";
   src: url(/assets/font/Ailerons/Ailerons.ttf) format("truetype");
+} */
+
+@font-face {
+  font-family: "Alegreya Sans", sans-serif;
+  src: url(/assets/font/Alegreya_Sans/AllegreyaSans-Regular.ttf)
+    format("truetype");
 }
 
 html {
@@ -29,9 +35,10 @@ aside {
   display: flex;
 
   flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: baseline;
-  justify-content: center;
   margin: 2em 1em 1em 2em;
+  width: 50vw;
 
   font-size: 1.5em;
 }
@@ -42,8 +49,7 @@ a {
 }
 
 a:hover {
-  font-weight: bolder;
-  flex-shrink: 0;
+  color: #2e2e2e;
 }
 
 li {
@@ -53,7 +59,7 @@ li {
 
 h1 {
   color: #fff;
-  font-family: Ailerons;
+  font-family: "Ailerons";
   font-size: 5em;
   line-height: 1.6;
   text-align: center;
@@ -61,7 +67,7 @@ h1 {
 
 h2 {
   color: #737373;
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-size: 3em;
   font-weight: 300;
   text-align: center;

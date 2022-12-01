@@ -19,7 +19,7 @@
   margin: 4em 2em 4em 5em;
 }
 
-.header__logo--txt {
+s {
   float: left;
 
   color: #595858;
@@ -41,11 +41,17 @@
   display: flex;
 
   justify-content: space-between;
-  width: 20em;
+  width: 25em;
 
-  font-size: 0.8em;
+  font-family: "Alegreya Sans";
+  font-size: 1em;
   font-weight: 50;
   text-transform: uppercase;
+}
+
+.header__navigation--up > * {
+  min-width: 6rem;
+  text-align: center;
 }
 
 .header__form--searchbar {
