@@ -2,10 +2,10 @@
 
 /* ------- general ------- */
 
-/* @font-face {
+@font-face {
   font-family: "Ailerons";
   src: url(/assets/font/Ailerons/Ailerons.ttf) format("truetype");
-} */
+}
 
 @font-face {
   font-family: "Alegreya Sans", sans-serif;
@@ -38,7 +38,7 @@ aside {
   justify-content: space-between;
   align-items: baseline;
   margin: 2em 1em 1em 2em;
-  width: 50vw;
+  width: 55vw;
 
   font-size: 1.5em;
 }
@@ -50,6 +50,7 @@ a {
 
 a:hover {
   color: #2e2e2e;
+  font-weight: bolder;
 }
 
 li {
